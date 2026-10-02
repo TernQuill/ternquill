@@ -1,0 +1,61 @@
+name: Bug report
+description: Something in TernQuill doesn't work as it should
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please don't paste anything private (passwords, tokens, internal hosts).
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what happened, and what you expected instead.
+      placeholder: |
+        1. Opened a split pane with ⌘D
+        2. Typed …
+        3. The input bar …
+        Expected: …
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: TernQuill version
+      description: Top right of the window, e.g. v0.8.6
+      placeholder: v0.8.6
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      description: Apple menu → About This Mac
+      placeholder: macOS 15.3
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where in the app
+      options:
+        - Terminal / input bar
+        - Tabs, split panes, broadcast
+        - AI agents
+        - Notes
+        - Settings
+        - Updates
+        - Something else
+  - type: dropdown
+    id: often
+    attributes:
+      label: How often
+      options:
+        - Every time
+        - Sometimes
+        - Happened once
+  - type: textarea
+    id: more
+    attributes:
+      label: Screenshots or anything else
+      description: Drag images here. For a crash, what you were doing just before.
