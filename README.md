@@ -58,7 +58,7 @@ The input bar is where you type: multi-line, with syntax highlighting, your hist
 <td width="50%"><img src=".github/assets/notes.png" alt="Notes next to the terminal" /></td>
 </tr>
 <tr>
-<td><b>Ask about anything in your terminal</b><br />Hover a block and click ✦, or right-click a selection. Claude Code and other agents run on your own account; they read your terminal only when you say so, and every action they take asks first.</td>
+<td><b>Ask about anything in your terminal</b><br />Hover a block and click ✦, or right-click a selection. Claude Code and other agents run on your own account; they read your terminal only when you say so, and ask before they change anything unless you let them.</td>
 <td><b>Your runbooks, next to your terminal</b><br />Open your Obsidian notes beside the shell, run the commands in them with one click, and let your agent use them — or keep a folder off-limits.</td>
 </tr>
 </table>
