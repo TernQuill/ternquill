@@ -8,6 +8,18 @@ update, so the update window shows everything since your version.
 Format: `## <version>`, then `### New`, `### Improved` or `### Fixed`, then
 bullets that start with a **bold name**.
 
+## 0.8.9
+
+### New
+- **A faster terminal engine** — the terminal is now drawn by xterm.js on the graphics card (WebGL), from a set of ready-made letters instead of one by one. Big output scrolls past faster (up to a quarter quicker on a Mac), animations around the terminal stay smooth, and it keeps 10,000 lines of history. Same font, letter spacing and colours as before; lines sit a little further apart, as in Ghostty.
+
+### Improved
+- **One font size for the terminal and the input bar** — Settings → Terminal → Font size now sets both, and the terminal's text is drawn as light as the input bar's, so they read as one.
+- **The scrollbar keeps out of the way** — thin and quiet, shown while you scroll and when you point at it.
+
+### Fixed
+- **The input bar with prompt themes** — with powerlevel10k (and similar themes) the input bar didn't come up; it does now.
+
 ## 0.8.8
 
 ### Improved
