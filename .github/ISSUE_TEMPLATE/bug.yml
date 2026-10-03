@@ -26,11 +26,20 @@ body:
       placeholder: v0.8.6
     validations:
       required: true
-  - type: input
-    id: macos
+  - type: dropdown
+    id: platform
     attributes:
-      label: macOS version
-      description: Apple menu → About This Mac
+      label: Platform
+      options:
+        - macOS
+        - Linux
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: System version
+      description: "macOS: Apple menu → About This Mac. Linux: distribution, desktop and Wayland or X11 (e.g. Ubuntu 24.04, GNOME, Wayland)."
       placeholder: macOS 15.3
     validations:
       required: true
